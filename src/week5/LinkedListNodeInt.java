@@ -9,7 +9,7 @@ public class LinkedListNodeInt {
         this.next=next;
     }
 
-    @Override
+
     public String toString() {
         String out="";
         if (this.next!=null){
