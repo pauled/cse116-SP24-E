@@ -1,6 +1,5 @@
 package week7;
 
-import week4.Player;
 
 public class HealthPotion extends GameItem{
     private int increase;
@@ -20,8 +19,20 @@ public class HealthPotion extends GameItem{
 
     public static void main(String[] args) {
         HealthPotion hp1=new HealthPotion(1,2,3);
+        //
         Weapon w1=new Weapon(4,5,6);
+        Player p1=new Player(10);
+        p1.move(13,42);
+        w1.use(p1);
+        System.out.println(p1);
+        //
+        hp1.move(10,10);
         System.out.println(hp1);
         System.out.println(w1);
+
+        System.out.println(p1);
+        w1.use(p1);
+        p1.move(13,42);
+        System.out.println(p1);
     }
 }

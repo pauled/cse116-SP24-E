@@ -1,6 +1,5 @@
 package week7;
 
-import week4.Player;
 
 public class Weapon extends GameItem{
     private int damage;
