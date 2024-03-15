@@ -11,6 +11,16 @@ public class BinaryTreeNode<A> {
         this.left=left;
         this.right=right;
     }
+    public int count(){
+        int out=1;
+        if (this.left!=null){
+            out+=this.left.count();
+        }
+        if (this.right!=null){
+            out+=this.right.count();
+        }
+        return out;
+    }
     public String preOrderTraversal(BinaryTreeNode node){
         if (node!=null){
             String out="";
