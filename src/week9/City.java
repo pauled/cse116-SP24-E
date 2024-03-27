@@ -37,8 +37,8 @@ public class City {
 
     @Override
     public String toString() {
-        return this.country+","+this.name+","+this.region+","+
+        return "("+this.country+","+this.name+","+this.region+","+
                 this.population+","+this.location.getLatitude()+","
-                +this.location.getLongitude();
+                +this.location.getLongitude()+")";
     }
 }

@@ -21,7 +21,26 @@ public class CountriesExample {
         lines.remove(0);
         for (String line : lines){
             ArrayList<String> splits=new ArrayList<>(Arrays.asList(line.split(",")));
+
+            String country=splits.get(0);
+            String name=splits.get(1);
+            String region=splits.get(2);
+            int population=Integer.parseInt(splits.get(3));
+            double latitute=Double.parseDouble(splits.get(4));
+            double longitude=Double.parseDouble(splits.get(5));
+            Location location=new Location(latitute,longitude);
+            City city=new City(name,region,country,population,location);
+            if (!countries.containsKey(country)){
+                countries.put(country,new ArrayList<>());
+            }
+            countries.get(country).add(city);
         }
         return countries;
+    }
+
+    public static void main(String[] args) {
+        HashMap<String, ArrayList<City>> countries=
+                loadCountries("data/cities_test_2.csv");
+        System.out.println(countries);
     }
 }
