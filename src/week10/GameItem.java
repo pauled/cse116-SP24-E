@@ -1,7 +1,7 @@
 package week10;
 
 
-public class GameItem {
+public abstract class GameItem {
     private double xLoc;
     private double yLoc;
 
@@ -9,7 +9,6 @@ public class GameItem {
         this.xLoc=xLoc;
         this.yLoc=yLoc;
     }
-    public void use(Player player){}
     public void move(double dx,double dy){
         this.xLoc+=dx;
         this.yLoc+=dy;

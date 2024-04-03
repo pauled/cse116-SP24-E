@@ -1,7 +1,7 @@
 package week10;
 
 
-public class Weapon extends GameItem {
+public class Weapon extends GameItem implements Usable{
     private int damage;
 
     public Weapon(double xLoc,double yLoc,int damage){
