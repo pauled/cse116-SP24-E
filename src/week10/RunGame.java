@@ -6,6 +6,7 @@ public class RunGame {
         //w1.enhance();
         GameItem w2=w1;
         GameItem w4=new Weapon(4,5,6);
+        Usable w5=new Weapon(4,5,6);
         Object o1=w2;
         //w2.enhance();
         Weapon w3=(Weapon)w2;
