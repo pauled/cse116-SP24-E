@@ -25,7 +25,10 @@ public class Graph<N> {
     public String toString() {
         return this.adjacencyList.toString();
     }
-
+    public boolean areConnected(N from,N to){
+        return this.adjacencyList.containsKey(from) &&
+                this.adjacencyList.get(from).contains(to);
+    }
     public boolean validPath(ArrayList<N> path){
         for (int i=0;i<path.size()-1; i++){
             N from=path.get(i);
