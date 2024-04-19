@@ -1,16 +1,17 @@
 package week12.brainOrig;
 
 public class Panic extends MentalState{
-    public Panic(Student brain){
-        super(brain);
+    public Panic(){
     }
-    public void study(){
-        this.brain.setState(new Calm(this.brain));
+    public MentalState study(){
+        return new Calm();
     }
-    public void getCloserToExam(){
+    public MentalState getCloserToExam(){
         System.out.println("all my drinks are shaken not stirred");
+        return this;
     }
-    public void expressFeelings(){
+    public MentalState expressFeelings(){
         System.out.println("I AM FREAKING OUT MAN!");
+        return this;
     }
 }

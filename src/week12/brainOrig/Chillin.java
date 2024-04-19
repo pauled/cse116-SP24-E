@@ -1,16 +1,18 @@
 package week12.brainOrig;
 
 public class Chillin extends MentalState{
-    public Chillin(Student brain){
-        super(brain);
+    public Chillin(){
     }
-    public void study(){
+    public MentalState study(){
         System.out.println("I am such a good student that I still study");
+        return this;
     }
-    public void getCloserToExam(){
+    public MentalState getCloserToExam(){
         System.out.println("I am so good I take exams even when I'm done");
+        return this;
     }
-    public void expressFeelings(){
+    public MentalState expressFeelings(){
         System.out.println("I am done");
+        return this;
     }
 }

@@ -19,7 +19,7 @@ public class Student {
         this.state=this.state.expressFeelings();
     }
     public void passClass(){
-        this.state=new Chillin(this);
+        this.state=new Chillin();
     }
 
     public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class Student {
         jesse.study();
         jesse.getCloserToExam();
         jesse.getCloserToExam();
-        jesse.expressFeelings();
+        //jesse.expressFeelings();
         jesse.study();
         jesse.expressFeelings();
         jesse.passClass();
